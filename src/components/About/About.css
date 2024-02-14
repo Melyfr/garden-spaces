@@ -1,0 +1,302 @@
+.about {
+    margin: 110px 0px;
+}
+
+.about__header {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 500px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.about__subtitle::after {
+    background-image: url(../../assets/flower.svg);
+}
+
+.about__items {
+    margin-top: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+}
+
+.about__line {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+}
+
+.about__item {
+    padding: 70px 26px;
+    flex: 40%;
+
+    background-color: var(--primary-color);
+    border-radius: 20px;
+}
+
+.about__item__title {
+    margin-bottom: 30px;
+    position: relative;
+
+    color: var(--neutral-color);
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.about__item__title::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 50px;
+    background-color: var(--primary-light-color);
+    height: 2px;
+}
+
+.about__item__subtitle {
+    color: var(--neutral-color);
+    font-weight: normal;
+    margin-bottom: 14px;
+}
+
+.about__item__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 0px;
+}
+    
+.about__item--clients {
+    flex: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.clients__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clients__bottom::after {
+    content: '';
+    width: 70px;
+    height: 70px;
+    display: block;
+    background-image: url(../../assets/star.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.clients__percent {
+    color: var(--accent-color);
+    font-size: 36px;
+}
+
+.clients__satisfaction {
+    color: var(--accent-color);
+}
+
+.about__item--overview {
+    flex: 50%;
+    padding: 20px 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.about__item--overview::before {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    background-image: url(../../assets/about-flowers-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.about__item--oak {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--secondary-color);
+}
+
+.oak__img {
+    background-image: url(../../assets/oak.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center right;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    filter: brightness(0.9);
+}
+
+.about__item--oak::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    left: -10%;
+    background-color: var(--primary-light-color);
+    animation: fly 10s ease-in-out infinite;
+}
+
+.about__item--oak::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    top: -20%;
+    right: -10%;
+    border: 3px solid var(--accent-color);
+    animation: flyRev 7s ease-in-out infinite;
+}
+
+@keyframes fly {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-28px);}
+    100% {transform: translateY(0px);}
+}
+
+@keyframes flyRev {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(40px);}
+    100% {transform: translateY(0px);}
+}
+
+.oak__content {
+    position: absolute;
+    z-index: 2;
+    bottom: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.about__btn {
+    border: 1px solid var(--neutral-color);
+    padding: 10px 10px 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    color:  var(--neutral-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.about__btn:hover {
+    background-color: var(--neutral-color);
+    color: var(--primary-color);
+}
+
+.about__btn::after {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-color: var(--neutral-color);
+    -webkit-mask: url(../../assets/arrow.svg) no-repeat;
+    -webkit-mask-size: 20px;
+    border-radius: 50%;
+    transform: translateY(6px);
+    transition: transform .16s ease-in-out;
+}
+
+.about__btn:hover.about__btn::after {
+    background-color: var(--primary-color);
+    transform: rotate(45deg) translateY(13px);
+}
+
+.about__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--neutral-color);
+    padding: 14px 30px;
+    border-radius: 50px;
+    gap: 60px;
+    color:  var(--neutral-color);
+}
+
+.about__item--about {
+    margin-bottom: 20px;
+    max-width: 400px;
+}
+
+.about__item--img {
+    background-image: url(../../assets/about-flowers-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: brightness(0.8);
+}
+
+@media (max-width: 1350px) {
+    .about {
+        margin: 70px 0;
+    }
+
+    .about__line {
+        flex-direction: column;
+    }
+    
+    .clients__bottom {
+        margin-top: 60px;
+    }
+
+    .about__item--overview::before {
+        display: none;
+    }
+
+    .about__item--about {
+        max-width: none;
+    }
+
+    .oak__content {
+        gap: 14px;
+        flex-direction: column;
+    }
+
+    .about__item--oak {
+        padding-top: 400px;
+    }
+
+    .oak__img {
+        background-position: top center;
+        top: 30px;
+    }
+
+    .about__item--oak::before {
+        width: 330px;
+        height: 330px;
+        left: -40px;
+        bottom: -120px;
+    }
+
+    .about__item--oak::after {
+        width: 330px;
+        height: 330px;
+    }
+
+    .about__item--oak::after {
+        top: -34%;
+    }
+}

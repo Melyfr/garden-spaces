@@ -1,0 +1,87 @@
+.team {
+    margin: 110px 0px;
+}
+
+.team__header {
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.team__subtitle::after {
+    background-image: url(../../assets/flower.svg);
+}
+
+.team__subtitle {
+    margin-bottom: 10px;
+}
+
+.team__slide {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    cursor: grab;
+}
+
+.slide__img {
+    width: 400px;
+    
+}
+
+.slide__content {
+    margin-bottom: 50px;
+}
+
+.slide__text {
+    max-width: 600px;
+    padding: 40px 0;
+    border-top: 2px solid #EBDFD9;
+    border-bottom: 2px solid #EBDFD9;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    line-height: 26px;
+    color: #373735;
+    margin: 40px 0;
+}
+
+.slide__nav, .slide__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide__name {
+    margin-right: 30px;
+}
+
+.slide__post {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.slide__nav__btn {
+    cursor: pointer;
+    padding-bottom: 1px;
+}
+
+.slide__nav__btn:hover {
+    border-bottom: 1px solid var(--primary-color);
+    padding-bottom: 0px;
+}
+
+@media (max-width: 1350px) {
+    .team {
+        margin: 70px 0;
+    }
+
+    .team__slide {
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .slide__img {
+        width: 260px;
+        height: 400px;
+    }
+}

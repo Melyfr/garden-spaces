@@ -1,0 +1,65 @@
+:root {
+    --primary-color: #0D3824;
+    --primary-light-color: #118E49;
+    --secondary-color: #60BF6E;
+    --secondary-light-color: #EFFEED;
+    --accent-color: #FFA02A;
+    --neutral-dark-color: #1D1D1C;
+    --neutral-color: #FFFFFF;
+    --neutral-light-color: #B0BEB4;
+}
+
+* {
+    font-family: 'Basecoat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--neutral-dark-color);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Basecoat"; 
+    src: url("./assets/fonts/basecoat.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+@font-face {
+    font-family: "Basecoat"; 
+    src: url("./assets/fonts/basecoat-bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: bold; 
+} 
+
+@font-face {
+    font-family: "Basecoat"; 
+    src: url("./assets/fonts/basecoat-light.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: 300; 
+} 

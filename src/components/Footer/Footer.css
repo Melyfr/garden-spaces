@@ -1,0 +1,132 @@
+.footer {
+    background-color: var(--primary-color);
+}
+
+.footer__img {
+    position: relative;
+    padding: 300px 0 100px;
+}
+
+.footer__img::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+
+    background-image: url(../../assets/about-flowers-2.jpg);
+    filter: brightness(50%);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer__img_text {
+    max-width: 204px;
+    position: relative;
+    z-index: 1;
+    color: var(--neutral-color);
+    text-transform: capitalize;
+    font-size: 22px;
+    line-height: 36px;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0 60px;
+}
+
+.footer__cta {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer__desc {
+    max-width: 296px;
+}
+
+.footer__form {
+    background-color: #406151;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.footer__input {
+    border: none;
+    background-color: transparent;
+    padding: 14px 10px;
+    color: var(--neutral-color);
+}  
+
+.footer__input::placeholder {
+    color: var(--neutral-light-color);
+}   
+
+.footer__btn {
+    padding: 6px 28px;
+}
+
+.footer__nav {
+    display: flex;
+    gap: 80px;
+}
+
+.footer__title {
+    margin-bottom: 16px;
+    color: var(--neutral-color);
+    font-size: 18px;
+}
+
+.footer__link {
+    margin-top: 10px;
+    color: var(--neutral-light-color);
+    display: block;
+    font-weight: 300;
+}
+
+.footer__contact {
+    max-width: 202px;
+}
+
+.footer__icon {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer__icon::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.footer__number::before {
+    background-image: url(../../assets/phone.svg);
+}
+
+.footer__email::before {
+    background-image: url(../../assets/email.svg);
+}
+
+@media (max-width: 1350px) {
+    .footer__content {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .footer__nav {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+}

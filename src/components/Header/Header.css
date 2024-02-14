@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: center;
+    gap: 44px;
+}
+
+.nav__link:hover {
+    color: var(--secondary-color);
+}
+
+.heaedr__btn {
+    border-radius: 30px;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        display: none;
+    }
+}

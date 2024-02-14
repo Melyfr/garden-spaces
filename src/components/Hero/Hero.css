@@ -1,0 +1,155 @@
+.hero {
+    background-color: var(--primary-color);
+    color: var(--neutral-color);
+    border-radius: 26px;
+    padding: 100px 84px;
+    margin: 0 30px;
+    background-position: center right;
+    background-image: url(../../assets/hero-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hero::after {
+    background-position: center right;
+
+    background-image: url(../../assets/hero-bg.svg);
+}
+
+.hero__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    max-width: 500px;
+    align-items: start;
+    margin: 0;
+}
+
+.hero__subtitle {
+    color: var(--secondary-color);
+}
+
+.hero__subtitle::after {
+    background-image: url(../../assets/leaf.svg);
+    transform: rotate(-40deg);
+}
+
+.hero__title {
+    position: relative;
+    letter-spacing: 2px;
+}
+
+.hero__title::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+    width: 74px;
+    height: 34px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url(../../assets/leafs.png);
+}
+
+.hero__btn:hover {
+    border-color: var(--neutral-color);
+    color: var(--neutral-color);
+}
+
+.hero__img {
+    position: relative;
+    background-color: var(--secondary-color);
+    border-radius: 200px;
+    overflow: hidden;
+}
+
+.hero__tree {
+    width: 350px;
+    height: 460px;
+    background-image: url(../../assets/hero-tree.png);
+    background-size: 92%;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+    z-index: 3;
+}
+
+.hero__img::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    top: -10%;
+    left: -10%;
+    border: 3px solid var(--accent-color);
+    animation: flyRev 7s ease-in-out infinite;
+}
+
+.hero__img::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    bottom: -10%;
+    right: -10%;
+    background-color: var(--primary-light-color);
+    animation: fly 10s ease-in-out infinite;
+}
+
+@keyframes fly {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-28px);}
+    100% {transform: translateY(0px);}
+}
+
+@keyframes flyRev {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(40px);}
+    100% {transform: translateY(0px);}
+}
+
+@media (max-width: 1024px) {
+    .hero__container {
+        flex-direction: column;
+    }
+
+    .hero {
+        background-image: none;
+        border-radius: 0px;
+        padding: 40px;
+        margin: 0;
+    }
+
+    .hero__content {
+        align-items: normal;
+        text-align: center;
+    }
+
+    .hero__tree {
+        width: 300px; 
+    }
+
+    .hero__title::after {
+        bottom: -44px;
+        left: calc(50% - 36px);
+    }
+
+    .hero__title {
+        margin-bottom: 40px;
+    }
+}
