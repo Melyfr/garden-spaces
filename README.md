@@ -1,27 +1,24 @@
-# React + TypeScript + Vite
+### Garden Spaces
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Garden-Spaces](https://github.com/Melyfr/garden-spaces/assets/72978278/f6ebeddb-5ee1-4f22-a2a0-cd2bfc21dfe6)
+<div>
+  <img src="https://img.shields.io/badge/TypeScript-1F2544?style=for-the-badge&logo=typescript&logoColor=#3178C6"/> 
+  <img src="https://img.shields.io/badge/HTML-1F2544?style=for-the-badge&logo=html5&logoColor=#E34F26"/> 
+  <img src="https://img.shields.io/badge/CSS-1F2544?style=for-the-badge&logo=css3&logoColor=1572B6"/> 
+  <img src="https://img.shields.io/badge/React-1F2544?style=for-the-badge&logo=react&logoColor=#61DAFB"/> 
+  <img src="https://img.shields.io/badge/Vite-1F2544?style=for-the-badge&logo=vite&logoColor=#646CFF"/> 
+</div>
 
-Currently, two official plugins are available:
+### О проекте:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+#
 
-## Expanding the ESLint configuration
+### Быстрый запуск:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+npm i
+```
+```
+npm run dev
+```
