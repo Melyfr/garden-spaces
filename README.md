@@ -1,4 +1,4 @@
-### Garden Spaces
+### Garden Spaces Landing
 
 ![Garden-Spaces](https://github.com/Melyfr/garden-spaces/assets/72978278/f6ebeddb-5ee1-4f22-a2a0-cd2bfc21dfe6)
 <div>
@@ -11,7 +11,7 @@
 
 ### О проекте:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Лэндинг для компании, специализирующейся на оформлении и выращивании зеленых зон и садов. Интерфейс лэндинга адаптирован для различных размеров экрана.
 #
 
 ### Быстрый запуск:
